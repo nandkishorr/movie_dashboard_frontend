@@ -1,0 +1,87 @@
+*{
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.home{
+    height: 100%;
+    width: 100%;
+}
+.sidebar{
+    height: 100%;
+    width: 20%;
+    background-color: rgba(10, 26, 42, 0.388);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+}
+.user-profile{
+
+    height: 400px;
+    width: 300px;   
+    display: flex;
+    padding-left: 20px;
+}
+.userdp{
+    display: flex;
+    height: 110px;
+    width: 110px;
+    margin-left: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    
+}
+.userdp img{
+   height: 100px;
+   width: 100px;
+    border-radius: 50%;
+    margin: 5px;
+    
+}
+.logout{
+    cursor: pointer;
+    color:rgb(249, 53, 53);
+    margin-top:150px;
+}
+.main-area{
+    height: 100%;
+    width: 80%;
+}
+.main-top{
+    color: rgb(210, 210, 210);
+  font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.main-content{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: 630px;
+    background-color: rgba(10, 26, 42, 0.388);
+    border-radius: 10px 20px 20px 10px;
+}
+.add-icon{
+top: 87%;
+left:90%;;
+position: absolute;
+}
+.add-icon svg{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+@media screen and (max-width:1000px){
+    .sidebar{
+        display: none;
+    }
+    
+}

@@ -1,38 +1,18 @@
-.App {
-  text-align: center;
+ @import url('https://fonts.googleapis.com/css2?family=Outfit&family=Poppins&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.main-body{
+  width: 100%;
+  height: 100vh;
+  color: rgb(216, 216, 216);
+  font-family: 'Outfit', sans-serif;
+  background-image: linear-gradient(rgba(50, 70, 91),rgb(15, 27, 39));
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
