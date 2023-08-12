@@ -29,11 +29,11 @@ function Card({title,image,description,rating,user,_id}) {
     const finalRef = useRef(null)
     const [ttitle, setTitle] = useState(title)
       const [timage, setImage] = useState(image)
-      const [tdescription, setDescription] = useState(description)
+      const [tbody, setBody] = useState(description)
       const [trating, setRating] = useState(rating)
   
       const updateMovie = () => {
-          dispatch(updateMovies(_id,{title:ttitle,image:timage,body:tdescription,rating:trating}))
+          dispatch(updateMovies(_id,{title:ttitle,image:timage,description:tbody,rating:trating}))
           onClose()   
       }
 
@@ -50,7 +50,7 @@ function Card({title,image,description,rating,user,_id}) {
     <div className="card-name-box">
         <center>
             <p>{ttitle}</p>
-            <h3 style={{overflow:"hidden"}}>{tdescription}</h3>
+            <h3 style={{overflow:"hidden"}}>{tbody}</h3>
             <Rating name="half-rating-read" defaultValue={trating} precision={0.5} readOnly />
         </center>
      
@@ -95,9 +95,8 @@ function Card({title,image,description,rating,user,_id}) {
           placeholder="Description"
           multiline
           variant="standard"
-
-          onChange={(e)=>setDescription(e.target.value)}
-          value={description}
+          onChange={(e)=>setBody(e.target.value)}
+          value={tbody}
         />
          <TextField sx={{ mb:2, width: '38ch' }}
           id="standard-number"
