@@ -28,7 +28,7 @@ function Login() {
           navigate("/home")
       }
     
-      if(loding) return   toast.loading('The data is loading');
+      if(loding) return toast.loading('The data is loading');
    
       if(error) return toast.error('Something went wrong');
 
@@ -87,7 +87,7 @@ function Login() {
         <div><Button sx={{
             width:'40px',float:'right'
           }} variant="contained" onClick={()=>handleLogin()}>Login</Button>
-           <h6 style={{ cursor:'pointer'}} onClick={()=>{navigate("/register")}}>Already a user?</h6> </div>
+           <h6 style={{ cursor:'pointer'}} onClick={()=>{navigate("/register")}}>New user?</h6> </div>
 
         </Box>
          </div>
