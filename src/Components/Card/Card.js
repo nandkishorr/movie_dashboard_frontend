@@ -29,7 +29,7 @@ function Card({title,image,description,rating,user,_id}) {
     const finalRef = useRef(null)
     const [ttitle, setTitle] = useState(title)
       const [timage, setImage] = useState(image)
-      const [tdescription, setBody] = useState(description)
+      const [tdescription, setDescription] = useState(description)
       const [trating, setRating] = useState(rating)
   
       const updateMovie = () => {
@@ -95,7 +95,8 @@ function Card({title,image,description,rating,user,_id}) {
           placeholder="Description"
           multiline
           variant="standard"
-          onChange={(e)=>setBody(e.target.value)}
+
+          onChange={(e)=>setDescription(e.target.value)}
           value={description}
         />
          <TextField sx={{ mb:2, width: '38ch' }}
