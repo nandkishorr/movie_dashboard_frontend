@@ -112,7 +112,7 @@ function Home() {
               value={image}
             />
             <TextField
-              sx={{ mb: 2, width: '38ch' }}
+              sx={{ mb: 2, width: '50ch' }}
               label="Description"
               placeholder="Description"
               multiline
@@ -134,7 +134,7 @@ function Home() {
             />
             <Button
               sx={{ width: '100px', float: 'right' }}
-              onClick={addMovie}
+              onClick={addMovie()}
               variant="contained"
             >
               Add
