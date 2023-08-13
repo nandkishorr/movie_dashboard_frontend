@@ -52,12 +52,14 @@
 .main-area{
     height: 100%;
     width: 80%;
+   padding: 3%;
 }
 .main-top{
     color: rgb(210, 210, 210);
   font-size: 35px;
     font-weight: 600;
     margin-bottom: 15px;
+    
 }
 .main-content{
     display: flex;
@@ -66,7 +68,7 @@
     overflow-y: scroll;
     scroll-behavior: smooth;
     max-width: 98%;
-    min-height: 90%;
+    height: 88%;
     background-color: rgba(10, 26, 42, 0.388);
     border-radius: 10px 20px 20px 10px;
 }

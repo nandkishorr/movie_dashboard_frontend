@@ -61,10 +61,11 @@ function Home() {
   
   useEffect(() => {
     dispatch(getMovies());
+    addMovie();
   }, []);
 
   return (
-    <div className='home row'>
+    <div className='home row '>
       <div className='sidebar row'>
         <h1>Dashboard</h1>
         <div className="user-profile row row-cols-1">
@@ -79,7 +80,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className='main-area container-fluid'>
+      <div className='main-area container-fluid '>
         <div className="main-top">Your Movie List.</div>
         <div className='add-icon col'>
           <DashboardCustomizeIcon onClick={onOpen} />
