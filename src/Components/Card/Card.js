@@ -39,7 +39,7 @@ function Card({title,image,description,rating,user,_id}) {
 
 
       useEffect(() => {
-        dispatch(updateMovies())
+        dispatch(updateMovies)
     }, [])
   return (
     <div className='card-tile col-lg-3 col-md-6 col-12 my-2'>

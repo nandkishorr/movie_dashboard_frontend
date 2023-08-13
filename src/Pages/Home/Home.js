@@ -61,7 +61,6 @@ function Home() {
   
   useEffect(() => {
     dispatch(getMovies());
-    addMovie();
   }, []);
 
   return (
@@ -134,7 +133,7 @@ function Home() {
             />
             <Button
               sx={{ width: '100px', float: 'right' }}
-              onClick={addMovie()}
+              onClick={addMovie}
               variant="contained"
             >
               Add
